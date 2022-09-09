@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "name": "西凉",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 2
+  },
+  {
+    "id": 2,
+    "name": "武威",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 3,
+    "name": "天水",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 4,
+    "name": "陇西",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 5,
+    "name": "潼关",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 6,
+    "name": "永安",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 7,
+    "name": "梓潼",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 8,
+    "name": "晋城",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 9,
+    "name": "白马",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 10,
+    "name": "洛阳",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 11,
+    "name": "蓟城",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 12,
+    "name": "北平",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 3
+  },
+  {
+    "id": 13,
+    "name": "北海",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 14,
+    "name": "东海",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 15,
+    "name": "官渡",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 16,
+    "name": "下邳",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 17,
+    "name": "临淄",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 18,
+    "name": "徐州",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 19,
+    "name": "寿春",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 20,
+    "name": "曲阿",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 21,
+    "name": "九江",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 22,
+    "name": "陈留",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 23,
+    "name": "濮阳",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 24,
+    "name": "邯郸",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 25,
+    "name": "长安",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 26,
+    "name": "汉中",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 27,
+    "name": "石城",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 28,
+    "name": "樊城",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 29,
+    "name": "成都",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 30,
+    "name": "武陵",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 31,
+    "name": "汉寿",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 32,
+    "name": "江州",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 33,
+    "name": "衡阳",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 34,
+    "name": "建昌",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 35,
+    "name": "赤壁",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 36,
+    "name": "九江",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 37,
+    "name": "江都",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 38,
+    "name": "合肥",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 39,
+    "name": "吴郡",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 40,
+    "name": "南昌",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 41,
+    "name": "建安",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 42,
+    "name": "会稽",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 4
+  },
+  {
+    "id": 43,
+    "name": "广陵",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 44,
+    "name": "建业",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 45,
+    "name": "丹阳",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 46,
+    "name": "汉津",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 47,
+    "name": "桂阳",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 48,
+    "name": "零陵",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 49,
+    "name": "建宁",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  },
+  {
+    "id": 50,
+    "name": "云南",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 5
+  },
+  {
+    "id": 51,
+    "name": "巴郡",
+    "position": {
+      "x": 1.2,
+      "y": 0.2,
+      "z": 1.2
+    },
+    "ifActivate": 1,
+    "forces": 1000,
+    "camp": 1
+  }
+]

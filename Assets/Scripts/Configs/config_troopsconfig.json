@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "凌统",
+    "forces": 5000,
+    "ifActivate": 1
+  },
+  {
+    "id": 2,
+    "name": "张绣",
+    "forces": 5500,
+    "ifActivate": 1
+  },
+  {
+    "id": 3,
+    "name": "张郃",
+    "forces": 6000,
+    "ifActivate": 1
+  },
+  {
+    "id": 4,
+    "name": "曹纯",
+    "forces": 5800,
+    "ifActivate": 1
+  },
+  {
+    "id": 5,
+    "name": "公孙瓒",
+    "forces": 7000,
+    "ifActivate": 1
+  },
+  {
+    "id": 6,
+    "name": "马岱",
+    "forces": 5000,
+    "ifActivate": 1
+  },
+  {
+    "id": 7,
+    "name": "徐庶",
+    "forces": 5500,
+    "ifActivate": 1
+  },
+  {
+    "id": 8,
+    "name": "关羽",
+    "forces": 7500,
+    "ifActivate": 1
+  },
+  {
+    "id": 9,
+    "name": "马云禄",
+    "forces": 5000,
+    "ifActivate": 1
+  },
+  {
+    "id": 10,
+    "name": "徐晃",
+    "forces": 6000,
+    "ifActivate": 1
+  },
+  {
+    "id": 11,
+    "name": "马超",
+    "forces": 7500,
+    "ifActivate": 1
+  },
+  {
+    "id": 12,
+    "name": "蒋钦",
+    "forces": 6500,
+    "ifActivate": 1
+  },
+  {
+    "id": 13,
+    "name": "陈宫",
+    "forces": 7000,
+    "ifActivate": 1
+  },
+  {
+    "id": 14,
+    "name": "魏延",
+    "forces": 8000,
+    "ifActivate": 1
+  },
+  {
+    "id": 15,
+    "name": "庞德",
+    "forces": 6000,
+    "ifActivate": 1
+  },
+  {
+    "id": 16,
+    "name": "华雄",
+    "forces": 7000,
+    "ifActivate": 1
+  },
+  {
+    "id": 17,
+    "name": "夏侯惇",
+    "forces": 7500,
+    "ifActivate": 1
+  },
+  {
+    "id": 18,
+    "name": "张飞",
+    "forces": 7500,
+    "ifActivate": 1
+  },
+  {
+    "id": 19,
+    "name": "程普",
+    "forces": 6000,
+    "ifActivate": 1
+  }
+]
