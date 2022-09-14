@@ -6,6 +6,7 @@ using SingleCase;
 using GameFSM;
 using cfg.Config;
 using Constant;
+using UnityEditor;
 
 public class MainUI : MonoBehaviour
 {
@@ -44,13 +45,16 @@ public class MainUI : MonoBehaviour
         bottomSum.Find("heroes").GetComponent<Button>().onClick.AddListener(ToHeroList);
         bottomSum.Find("troops").GetComponent<Button>().onClick.AddListener(ToTroops);
         bottomSum.Find("draw").GetComponent<Button>().onClick.AddListener(ToDraw);
+        transform.Find("exit").GetComponent<Button>().onClick.AddListener(OnExitGame);
         pauseBtn.GetComponent<Button>().onClick.AddListener(OnPauseClick);
 
 
         Watcher.On<GraphPosConfig>(EventCmd.Game_Config_inited, InitShow); 
         Watcher.On(EventCmd.Map_Troops_Up, OnTroopsUp);
         Watcher.On<int , int>(EventCmd.Map_Troops_Delete, OnTroopsDelete);
-        Watcher.On<int, int , int>(EventCmd.Occputated_Ntf, OnReport);
+        Watcher.On<int, int , int>(EventCmd.Occputated_Ntf, OnOccupyReport);
+        Watcher.On<int, int>(EventCmd.Reform_Start, OnReformStartReport);
+        Watcher.On<int, int>(EventCmd.Reform_Succ, OnReformSuccReport);
         bottomSum.Find("draw").GetComponent<Button>().onClick.AddListener(ToDraw);
         clickQuan.parent = null;
     }
@@ -60,7 +64,9 @@ public class MainUI : MonoBehaviour
         Watcher.Off<GraphPosConfig>(EventCmd.Game_Config_inited, InitShow);
         Watcher.Off(EventCmd.Map_Troops_Up, OnTroopsUp);
         Watcher.Off<int , int>(EventCmd.Map_Troops_Delete, OnTroopsDelete);
-        Watcher.Off<int, int , int>(EventCmd.Occputated_Ntf, OnReport);
+        Watcher.Off<int, int , int>(EventCmd.Occputated_Ntf, OnOccupyReport);
+        Watcher.Off<int, int>(EventCmd.Reform_Start, OnReformStartReport);
+        Watcher.On<int, int>(EventCmd.Reform_Succ, OnReformSuccReport);
     }
 
     private void InitShow(GraphPosConfig  cfg = null)
@@ -137,7 +143,7 @@ public class MainUI : MonoBehaviour
     }
 
     //按下暂停键
-    public void OnPauseClick()
+    private void OnPauseClick()
     {
         Debug.Log("选中暂停");
         bool ifPause = Common.gameCtrl.GetGameStatus();
@@ -154,27 +160,37 @@ public class MainUI : MonoBehaviour
     }
 
     //武将列表
-    public void ToHeroList()
+    private void ToHeroList()
     {
         Debug.Log("点击将册");
         BagUI.SetActive(true);
     }
 
     //编队
-    public void ToTroops()
+    private void ToTroops()
     {
         Debug.Log("点击部队");
         TroopsUI.SetActive(true);
     }
 
     //招募武将
-    public void ToDraw()
+    private void ToDraw()
     {
         Debug.Log("点击招募");
         DrawUI.SetActive(true);
     }
 
-    private void OnReport(int troopsId , int towerId , int camp)
+    private  void OnExitGame()
+    {
+        //预处理
+#if UNITY_EDITOR    //在编辑器模式下
+        EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    private void OnOccupyReport(int troopsId , int towerId , int camp)
     {
         GraphPosCfg tCfg = Configs.GetTowerCfgById(towerId);
         TroopsCfg trCfg = Configs.GetTroopsCfgById(troopsId);
@@ -203,6 +219,71 @@ public class MainUI : MonoBehaviour
             reportItem.GetComponent<Text>().color = Color.red;
         }
         else if(camp == (int)TowerColor.YELLOW)
+        {
+            reportItem.GetComponent<Text>().color = Color.yellow;
+        }
+    }
+
+    private void OnReformStartReport(int camp , int troopsId)
+    {
+        TroopsCfg trCfg = Configs.GetTroopsCfgById(troopsId);
+        string desStr = trCfg.Name + " 开始休整补充兵马";
+        Transform reportItem = Instantiate(reportTxtTmp);
+        reportItem.GetComponent<Text>().text = desStr;
+        reportItem.parent = reportCtnt;
+        if (camp == (int)TowerColor.GRAY)
+        {
+            reportItem.GetComponent<Text>().color = Color.gray;
+        }
+        else if (camp == (int)TowerColor.GREEN)
+        {
+            reportItem.GetComponent<Text>().color = Color.green;
+        }
+        else if (camp == (int)TowerColor.BLUE)
+        {
+            reportItem.GetComponent<Text>().color = Color.blue;
+        }
+        else if (camp == (int)TowerColor.PURPLE)
+        {
+            reportItem.GetComponent<Text>().color = Color.HSVToRGB(138, 0, 226);
+        }
+        else if (camp == (int)TowerColor.RED)
+        {
+            reportItem.GetComponent<Text>().color = Color.red;
+        }
+        else if (camp == (int)TowerColor.YELLOW)
+        {
+            reportItem.GetComponent<Text>().color = Color.yellow;
+        }
+    }
+    private void OnReformSuccReport(int camp, int troopsId)
+    {
+        TroopsCfg trCfg = Configs.GetTroopsCfgById(troopsId);
+        string desStr = trCfg.Name + "休整完毕";
+        Transform reportItem = Instantiate(reportTxtTmp);
+        reportItem.GetComponent<Text>().text = desStr;
+        reportItem.parent = reportCtnt;
+        if (camp == (int)TowerColor.GRAY)
+        {
+            reportItem.GetComponent<Text>().color = Color.gray;
+        }
+        else if (camp == (int)TowerColor.GREEN)
+        {
+            reportItem.GetComponent<Text>().color = Color.green;
+        }
+        else if (camp == (int)TowerColor.BLUE)
+        {
+            reportItem.GetComponent<Text>().color = Color.blue;
+        }
+        else if (camp == (int)TowerColor.PURPLE)
+        {
+            reportItem.GetComponent<Text>().color = Color.HSVToRGB(138, 0, 226);
+        }
+        else if (camp == (int)TowerColor.RED)
+        {
+            reportItem.GetComponent<Text>().color = Color.red;
+        }
+        else if (camp == (int)TowerColor.YELLOW)
         {
             reportItem.GetComponent<Text>().color = Color.yellow;
         }

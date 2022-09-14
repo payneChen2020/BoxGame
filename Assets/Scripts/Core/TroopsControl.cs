@@ -27,6 +27,10 @@ namespace GameFSM
         {
             if(curForces < maxForces)
             {
+                if(curForces == 0)
+                {
+                    Watcher.Dispatch(EventCmd.Reform_Start, camp, ID);
+                }
                 curForces += recoverSpeed;
 
                 //征兵完成
@@ -34,6 +38,7 @@ namespace GameFSM
                 {
                     curForces = maxForces;
                     status = TroopStatus.FREE;
+                    Watcher.Dispatch(EventCmd.Reform_Succ, camp, ID);
                 }
                 //如果是NPC也照样进去，不过找不到对应的队伍
                 GameModel.Instance().UpdateCurForces(ID , curForces);

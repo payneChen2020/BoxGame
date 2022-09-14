@@ -65,5 +65,7 @@ namespace Constant
         public static string Map_Troops_Delete = "map_troops_delete";
         public static string Map_Troops_Up = "map_troops_up";
         public static string Occputated_Ntf = "ccputated_ntf";
+        public static string Reform_Start = "reform_start";
+        public static string Reform_Succ = "reform_succ";
     }
 }
